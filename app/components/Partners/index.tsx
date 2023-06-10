@@ -14,8 +14,15 @@ import img5 from "../../assets/images/sponsors/5.svg";
 import img6 from "../../assets/images/sponsors/6.svg";
 import img7 from "../../assets/images/sponsors/7.svg";
 import SectionSeparator from "../SectionSeparator";
+import { useEffect, useState } from "react";
 
 export default function Partners() {
+  const [partners, setPartners] = useState<any[]>([]);
+
+  useEffect(() => {
+    setPartners([img1, img2, img3, img4, img5, img6, img7]);
+  }, []);
+
   return (
     <div
       className={`${styles.partners} flex flex-col justify-center items-center`}
@@ -26,7 +33,7 @@ export default function Partners() {
         id="cards"
         className="font-satoshi grid grid-cols-12 gap-x-4 gap-y-4 w-full mt-20"
       >
-        {[img1, img2, img3, img4, img5, img6, img7].map((img, idx) => (
+        {partners.map((img, idx) => (
           <div
             className={`${styles.card} ${
               idx > 2 ? "col-span-3 py-10" : "col-span-4 py-14"

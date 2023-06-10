@@ -19,7 +19,7 @@ export default function Prizes() {
         id="cards"
         className="font-satoshi grid grid-cols-3 gap-x-4 gap-y-4 w-full mt-20"
       >
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((_, idx) => (
+        {[...Array(9).keys()].map((_, idx) => (
           <div
             className={`${styles.card} flex rounded-2xl px-6 py-4`}
             key={idx}
