@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Heading from "../Heading";
 import styles from "./partners.module.scss";
