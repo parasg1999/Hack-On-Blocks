@@ -6,7 +6,7 @@ import logo from "../../assets/images/logo/logo.svg";
 export default function Navbar() {
   return (
     <div className="flex justify-center">
-      <nav className="absolute font-mono uppercase flex justify-between mt-4 md:mt-10 items-center w-full max-w-[90%] md:max-w-[1440px]">
+      <nav className="absolute font-mono uppercase flex justify-between mt-4 md:mt-8 items-center w-full max-w-[90%] md:max-w-[1440px]">
         <div className="mb-2 sm:mb-0">
           <a href="/home" className="text-grey-darkest hover:text-blue-dark">
             <Image src={logo} alt="filecoin" width={100} />

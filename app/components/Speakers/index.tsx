@@ -14,9 +14,8 @@ export default function Speakers() {
     >
       <SectionSeparator name="speakers" />
       <h1 className="text-xl md:text-6xl text-center font-quinque font-bold leading-relaxed">
-        SPEAKERS &amp;
-        <br />
-        MENTORS
+        <div>SPEAKERS &amp;</div>
+        <div className="mt-2 md:mt-4">MENTORS</div>
       </h1>
       <div
         id="cards"

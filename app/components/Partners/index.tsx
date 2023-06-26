@@ -27,7 +27,7 @@ export default function Partners() {
 
   return (
     <div
-      className={`${styles.partners} flex flex-col justify-center items-center`}
+      className={`${styles.partners} flex flex-col justify-center items-center mt-8 md:mt-20`}
     >
       <SectionSeparator name="partners" />
       <h1 className="text-xl md:text-6xl text-center font-quinque">PARTNERS</h1>
@@ -40,7 +40,7 @@ export default function Partners() {
             className={`${styles.card} ${
               idx > 2
                 ? "col-span-1 py-3 md:col-span-3 md:py-10"
-                : "col-span-2 py-7 md:col-span-4 md:py-14"
+                : "col-span-2 py-4 md:col-span-4 md:py-14"
             } flex flex-col rounded-lg md:rounded-2xl overflow-hidden justify-center items-center`}
             key={idx}
           >
@@ -51,7 +51,7 @@ export default function Partners() {
               className={`${
                 idx > 2
                   ? "max-w-[7rem] max-h-[5rem] md:max-w-[14rem] md:max-h-[10rem]"
-                  : "max-w-[16rem]"
+                  : " max-w-[10rem]  md:max-w-[16rem]"
               } `}
             />
           </div>

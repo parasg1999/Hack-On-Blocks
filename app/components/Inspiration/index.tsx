@@ -8,9 +8,8 @@ export default function Inspiration() {
     <div className={`flex flex-col justify-center items-center mt-8 md:mt-20`}>
       <SectionSeparator name="ideas" />
       <h1 className="text-xl md:text-6xl text-center font-quinque leading-relaxed">
-        What can
-        <br />
-        you build?
+        <div> What can</div>
+        <div className="mt-1 md:mt-4"> you build?</div>
       </h1>
       <div
         id="cards"
