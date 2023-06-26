@@ -23,7 +23,7 @@ export default function SectionSeparator(props: Props) {
         src={images[props.name]}
         width={240}
         alt="section separator"
-        className="mb-10"
+        className="mb-6 md:mb-10"
       />
     </>
   );

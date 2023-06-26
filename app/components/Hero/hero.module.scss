@@ -1,0 +1,26 @@
+.hero {
+  background: rgb(36, 36, 36);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(36, 36, 36, 1) 50%,
+    rgba(230, 224, 192, 1) 50%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(36, 36, 36, 1) 50%,
+    rgba(230, 224, 192, 1) 50%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(36, 36, 36, 1) 50%,
+    rgba(230, 224, 192, 1) 50%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#242424",endColorstr="#e6e0c0",GradientType=1);
+
+  display: flex;
+  justify-content: center;
+
+  .details {
+    top: calc(100% + 2rem);
+  }
+}

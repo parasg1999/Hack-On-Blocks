@@ -30,16 +30,18 @@ export default function Partners() {
       className={`${styles.partners} flex flex-col justify-center items-center`}
     >
       <SectionSeparator name="partners" />
-      <h1 className="text-6xl text-center font-quinque">PARTNERS</h1>
+      <h1 className="text-xl md:text-6xl text-center font-quinque">PARTNERS</h1>
       <div
         id="cards"
-        className="font-satoshi grid grid-cols-12 gap-x-4 gap-y-4 w-full mt-20"
+        className="font-satoshi grid grid-cols-2 md:grid-cols-12 gap-x-4 gap-y-4 w-full mt-8 md:mt-20"
       >
         {partners.map((img, idx) => (
           <div
             className={`${styles.card} ${
-              idx > 2 ? "col-span-3 py-10" : "col-span-4 py-14"
-            } flex flex-col rounded-2xl overflow-hidden justify-center items-center`}
+              idx > 2
+                ? "col-span-1 py-3 md:col-span-3 md:py-10"
+                : "col-span-2 py-7 md:col-span-4 md:py-14"
+            } flex flex-col rounded-lg md:rounded-2xl overflow-hidden justify-center items-center`}
             key={idx}
           >
             <Image
@@ -47,7 +49,9 @@ export default function Partners() {
               alt="filecoin"
               width={500}
               className={`${
-                idx > 2 ? "max-w-[14rem] max-h-[10rem]" : "max-w-[16rem]"
+                idx > 2
+                  ? "max-w-[7rem] max-h-[5rem] md:max-w-[14rem] md:max-h-[10rem]"
+                  : "max-w-[16rem]"
               } `}
             />
           </div>

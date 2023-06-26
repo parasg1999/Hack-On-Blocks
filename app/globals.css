@@ -5,6 +5,7 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 230, 224, 192;
+  scroll-behavior: smooth;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -18,6 +19,5 @@
 body {
   color: var(--foreground-rgb);
   background: rgb(var(--background-rgb));
-  max-width: 1440px;
   margin: auto;
 }

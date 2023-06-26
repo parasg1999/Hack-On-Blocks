@@ -8,16 +8,19 @@ import SectionSeparator from "../SectionSeparator";
 export default function Prizes() {
   return (
     <div
+      id="prizes"
       className={`${styles.prizes} flex flex-col justify-center items-center`}
     >
       <SectionSeparator name="prizes" />
-      <h1 className="text-7xl text-center font-quinque">$125,000</h1>
-      <h3 className="font-satoshi font-bold text-4xl mt-8">
+      <h1 className="text-2xl md:text-7xl text-center font-quinque">
+        $125,000
+      </h1>
+      <h3 className="text-xl mt-4 font-satoshi font-bold md:text-4xl md:mt-8">
         available in prizes{" "}
       </h3>
       <div
         id="cards"
-        className="font-satoshi grid grid-cols-3 gap-x-4 gap-y-4 w-full mt-20"
+        className="font-satoshi grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-4 w-full mt-8 md:mt-20"
       >
         {[...Array(9).keys()].map((_, idx) => (
           <div
@@ -37,7 +40,7 @@ export default function Prizes() {
         ))}
       </div>
       <div
-        className={`${styles.button} mt-14 font-satoshi font-bold px-6 py-4 rounded-xl text-xl`}
+        className={`${styles.button} mt-6 md:mt-14 font-satoshi font-bold px-4 py-2 rounded-xl text-xl`}
       >
         see prize details
       </div>
