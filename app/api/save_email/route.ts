@@ -1,6 +1,6 @@
 import validateEmail from "@/app/utils/validateEmail";
 import knex from "knex";
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse } from "next/server";
 
 const db = knex({
   client: "pg",
@@ -22,12 +22,13 @@ export async function POST(request: Request) {
 
   const isValidEmail = validateEmail(data.email || "");
 
-  if (!isValidEmail) return Response.json({ success: false }, { status: 400 });
+  if (!isValidEmail)
+    return NextResponse.json({ success: false }, { status: 400 });
 
   await db("emails")
     .insert({ email: data.email })
     .onConflict(["email"])
     .merge();
 
-  return Response.json({ success: true });
+  return NextResponse.json({ success: true });
 }
