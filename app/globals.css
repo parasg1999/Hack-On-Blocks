@@ -9,19 +9,102 @@
 }
 
 html {
-  background-color: rgb(36,36,36);
+  background-color: rgb(36, 36, 36);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
 
 body {
   color: var(--foreground-rgb);
   background: rgb(var(--background-rgb));
   margin: auto;
+}
+
+[contenteditable="true"]:focus {
+  outline: none;
+}
+*:focus {
+  outline: none;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop0ToNeg100 {
+  0% {
+    transform: translateX(0%);
+    display: flex;
+  }
+  100% {
+    transform: translateX(-100%);
+    display: none;
+  }
+}
+
+@keyframes moveTo100 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.scroll-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: fit-content;
+  white-space: nowrap;
+  position: fixed;
+  padding-left: 2rem;
+  background-color: #c18c41;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.scroll-container#scroll-container-one {
+  animation: loop0ToNeg100 15s linear normal forwards;
+}
+
+.scroll-container#scroll-container-two {
+  transform: translateX(100%);
+  animation: loop 30s linear 0s infinite;
+}
+
+.scroll-container#scroll-container-three {
+  transform: translateX(100%);
+  animation: loop 30s linear 15s infinite;
+}
+
+.transparent-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.main-footer {
+  background: linear-gradient(
+    180deg,
+    rgba(238, 238, 238, 0) 0%,
+    rgba(238, 238, 238, 0.641109) 20.76%,
+    rgba(238, 238, 238, 0.847283) 26.47%,
+    rgba(238, 238, 238, 0.954342) 36.95%,
+    #eeeeee 52.67%
+  );
 }
