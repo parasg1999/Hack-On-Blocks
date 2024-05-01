@@ -136,3 +136,7 @@ background: linear-gradient(0deg, #80E93D -37.61%, rgba(128, 233, 61, 0) 100%);
 .footer-shadow {
   box-shadow: 0px 25px 25px 0px #0000000d;
 }
+
+.leading-very-relaxed {
+  line-height: 10rem;
+}

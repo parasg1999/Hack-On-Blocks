@@ -77,11 +77,9 @@ export default function Speakers() {
         className="w-[34rem] mb-[-9rem] saturate-0 hover:saturate-100 transition-all"
         alt="arrow"
       />
-      <h1 className="text-xl md:text-6xl text-center font-quinque font-bold leading-relaxed z-10 pointer-events-none	">
-        <div>
-          <span className="hidden md:inline-block">PREVIOUS</span> SPEAKERS{" "}
-        </div>
-        <div className="mt-2 md:mt-4">&amp; MENTORS</div>
+      <h1 className="text-xl md:text-6xl text-center font-quinque font-bold z-10 pointer-events-none ">
+        <div className="leading-relaxed">PREVIOUS SPEAKERS</div>
+        <div className="leading-relaxed">&amp; MENTORS</div>
       </h1>
       <div
         id="cards"

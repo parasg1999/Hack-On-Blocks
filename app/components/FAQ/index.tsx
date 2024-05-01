@@ -57,10 +57,10 @@ export default function FAQ() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 mt-24 max-w-[1280px] m-auto gap-y-8 w-[90%]">
-      <h1 className="text-xl md:text-5xl font-quinque font-bold leading-relaxed z-10 pointer-events-none text-center md:text-left">
+      <h1 className="text-xl md:text-4xl lg:text-5xl font-quinque font-bold leading-relaxed z-10 pointer-events-none text-center md:text-left !leading-relaxed">
         <div>FREQUENTLY </div>
-        <div className="mt-2 md:mt-4">ASKED</div>
-        <div className="mt-2 md:mt-4">QUESTIONS</div>
+        <div>ASKED</div>
+        <div>QUESTIONS</div>
       </h1>
       <div className="flex flex-col gap-y-6 font-satoshi">
         {faqs.map((f, i) => (
