@@ -1,0 +1,95 @@
+"use client";
+
+import { useState } from "react";
+import faqArrow from "@/app/assets/images/icons/faq-arrow.svg";
+import Image from "next/image";
+
+const faqs = [
+  {
+    q: "Who can participate?",
+    a: "Everyone is welcome to participate, be they, developers or designers. Acceptance of applications is based on their interest in blockchain and proven ability to #BUIDL - whether it’s writing software, designing beautiful UX, or something entirely else.    ",
+  },
+  {
+    q: "When will the applications close?",
+    a: "The application period will close one week before the end of the hackathon period, i.e., June 15, 2024, at 11:59 PM IST. We evaluate applications on a rolling basis and will notify you of acceptance via email.",
+  },
+  {
+    q: "How does the application process work?",
+    a: 'We’re looking for people who "do". Folks who are passionate enough to work on crazy world-changing ideas. We can get to know you better from your past projects, open source contributions, GitHub/Devfolio profile, and participation in hackathons.    ',
+  },
+
+  {
+    q: "How much does it cost?",
+    a: "The hackathon is completely free for participants, thanks to our sponsors, which include schwag, prizes, and more.   ",
+  },
+  {
+    q: "Can we apply as a team?",
+    a: "Yes, you can participate in a team with up to 4 members.    ",
+  },
+  {
+    q: "What if I don't have a team or an idea?",
+    a: "Fret not; most people don’t! We’ll have team formation and ideation events geared towards helping you find people to work with.",
+  },
+  {
+    q: "Once I am accepted, what do I need to bring?",
+    a: "You can join our Telegram or Discord Channel to meet other hackers, mentors, and start building your project.    ",
+  },
+  {
+    q: "How does judging work?",
+    a: "A panel of builders will evaluate hacks based on creativity, technical difficulty, design, and usefulness. New judges will be announced on a rolling basis on Twitter/X, so make sure that you follow us!    ",
+  },
+  {
+    q: "Did we miss something?",
+    a: "Send us a DM at @rishabhbansal on Telegram or reach out to us at rishabh@hackon.tech    ",
+  },
+];
+
+export default function FAQ() {
+  const [openIndex, setOpenIndex] = useState(0);
+
+  const toggleFaq = (index: number) => {
+    if (index === openIndex) {
+      setOpenIndex(-1);
+    } else {
+      setOpenIndex(index);
+    }
+  };
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 mt-24 max-w-[1280px] m-auto gap-y-8 w-[90%]">
+      <h1 className="text-xl md:text-5xl font-quinque font-bold leading-relaxed z-10 pointer-events-none text-center md:text-left">
+        <div>FREQUENTLY </div>
+        <div className="mt-2 md:mt-4">ASKED</div>
+        <div className="mt-2 md:mt-4">QUESTIONS</div>
+      </h1>
+      <div className="flex flex-col gap-y-6 font-satoshi">
+        {faqs.map((f, i) => (
+          <div
+            className={
+              openIndex === i
+                ? "px-6 bg-[#46424D14] rounded-lg"
+                : "px-6 bg-[#ffffff] rounded-lg"
+            }
+          >
+            <div
+              className="py-4 flex font-bold text-xl justify-between items-center cursor-pointer gap-x-4"
+              onClick={() => toggleFaq(i)}
+            >
+              <span>{f.q}</span>
+              <Image src={faqArrow} className="w-[1rem] " alt="arrow" />
+            </div>
+            <div
+              className={
+                openIndex === i
+                  ? "py-2 flex flex-col text-xl  overflow-hidden  transition-all"
+                  : "flex flex-col text-xl h-[0px] overflow-hidden  transition-all"
+              }
+            >
+              {f.a}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

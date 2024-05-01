@@ -1,41 +1,54 @@
 "use client";
 
 import Image from "next/image";
-import logo from "../../assets/images/logo/logo.svg";
+import logo from "../../assets/images/logo/logo-new.svg";
+
+import menuOpen from "@/app/assets/images/icons/menu-open.svg";
+import menuClose from "@/app/assets/images/icons/menu-close.svg";
 
 export default function Navbar() {
   return (
-    <div className="flex justify-center">
-      <nav className="absolute font-mono uppercase flex justify-between mt-4 md:mt-8 items-center w-full max-w-[90%] md:max-w-[1440px]">
-        <div className="mb-2 sm:mb-0">
-          <a href="/home" className="text-grey-darkest hover:text-blue-dark">
-            <Image src={logo} alt="filecoin" width={100} />
+    <div className="flex justify-between w-[100%] sticky top-0 z-20 m-auto">
+      <nav className="font-mono uppercase flex justify-between mt-4 md:mt-8 items-center w-full max-w-[90%] md:max-w-[1440px] bg-[#80E93D] rounded-lg pl-8 h-12 font-bold m-auto items-center">
+        <div className="flex items-center">
+          <a href="/" className="text-grey-darkest hover:text-blue-dark">
+            <Image src={logo} alt="filecoin" width={140} />
           </a>
         </div>
-        <div className="border-2 border-[#414141] rounded-lg px-4 py-2 text-white opacity-50  hidden md:inline-block">
+        <div className="text-black hidden md:flex h-full flex-row items-center">
           <a
-            href="#prizes"
-            className="text-lg no-underline  hover:text-blue-dark"
+            href="#partners"
+            className="text-lg no-underline  hover:text-blue-dark h-full flex items-center"
           >
-            Prizes
+            PARTNERS
           </a>
-          <a
+          {/* <a
             href="#documentation"
             className="text-lg no-underline  hover:text-blue-dark ml-6"
           >
             Documentation
+          </a> */}
+          <a
+            href="#speakers"
+            className="text-lg no-underline  hover:text-blue-dark ml-8  h-full flex items-center"
+          >
+            Speakers
           </a>
           <a
-            href="#schedule"
-            className="text-lg no-underline  hover:text-blue-dark ml-6"
+            href="#faqs"
+            className="text-lg no-underline  hover:text-blue-dark ml-8  h-full flex items-center"
           >
-            Schedule
+            FAQ
           </a>
+
           <a
-            href="#mentors"
-            className="text-lg no-underline  hover:text-blue-dark ml-6"
+            href="#"
+            className="text-lg no-underline bg-white hover:text-blue-dark ml-8 px-8 h-full flex items-center rounded-r-lg"
           >
-            Mentors
+            Register
+            <span className="text-2xl font-regular mt-[-0.4rem] ml-[0.25rem]">
+              ↗
+            </span>
           </a>
         </div>
       </nav>
