@@ -71,6 +71,7 @@ export default function Speakers() {
   return (
     <div
       className={`flex flex-col justify-center items-center mt-8 md:mt-20 max-w-[1280px] m-auto w-[90%]`}
+      id="speakers"
     >
       <Image
         src={pokedex}

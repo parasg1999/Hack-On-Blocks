@@ -13,12 +13,14 @@ html {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground-rgb);
   background: rgb(var(--background-rgb));
   margin: auto;
+  scroll-behavior: smooth;
 }
 
 [contenteditable="true"]:focus {
@@ -139,4 +141,7 @@ background: linear-gradient(0deg, #80E93D -37.61%, rgba(128, 233, 61, 0) 100%);
 
 .leading-very-relaxed {
   line-height: 10rem;
+
+  @media screen {
+  }
 }

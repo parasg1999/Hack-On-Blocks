@@ -23,6 +23,7 @@ export default function Partners() {
   return (
     <div
       className={`flex flex-col justify-center items-center mt-8 md:mt-2 max-w-[1280px] m-auto w-[90%]`}
+      id="partners"
     >
       <Image
         src={disk}

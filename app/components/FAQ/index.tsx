@@ -56,7 +56,10 @@ export default function FAQ() {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 mt-24 max-w-[1280px] m-auto gap-y-8 w-[90%]">
+    <div
+      className="grid grid-cols-1 md:grid-cols-2 pt-24 max-w-[1280px] m-auto gap-y-8 w-[90%]"
+      id="faqs"
+    >
       <h1 className="text-xl md:text-4xl lg:text-5xl font-quinque font-bold leading-relaxed z-10 pointer-events-none text-center md:text-left !leading-relaxed">
         <div>FREQUENTLY </div>
         <div>ASKED</div>

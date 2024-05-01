@@ -52,7 +52,10 @@ export default function EmailCollector() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row bg-[#80E93D] font-satoshi rounded-md overflow-hidden w-fit z-10">
-          <div className="text-black font-bold px-[1.5rem] py-[1rem] rounded-md text-[1rem] md:text-[1.5rem] flex items-center ">
+          <a
+            className="text-black font-bold px-[1.5rem] py-[1rem] rounded-md text-[1rem] md:text-[1.5rem] flex items-center "
+            href="https://hackonblocks.devfolio.co/overview"
+          >
             register
             <Image
               src={arrowImage}
@@ -60,7 +63,7 @@ export default function EmailCollector() {
               alt="arrow"
               className="ml-[0.75rem]"
             />
-          </div>
+          </a>
         </div>
       </div>
       <div className="font-satoshi font-medium text-[1.25]rem md:text-[1.5rem] text-[#242424] text-center">

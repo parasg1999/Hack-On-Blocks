@@ -22,12 +22,6 @@ export default function Navbar() {
           >
             PARTNERS
           </a>
-          {/* <a
-            href="#documentation"
-            className="text-lg no-underline  hover:text-blue-dark ml-6"
-          >
-            Documentation
-          </a> */}
           <a
             href="#speakers"
             className="text-lg no-underline  hover:text-blue-dark ml-8  h-full flex items-center"
@@ -42,7 +36,7 @@ export default function Navbar() {
           </a>
 
           <a
-            href="#"
+            href="https://hackonblocks.devfolio.co/overview"
             className="text-lg no-underline bg-white hover:text-blue-dark ml-8 px-8 h-full flex items-center rounded-r-lg"
           >
             Register
