@@ -3,6 +3,14 @@ import EmailCollector from "./components/emailCollector";
 
 import retroDesktop from "./assets/images/retro-desktop.svg";
 import retroMobile from "./assets/images/retro-mobile.svg";
+import Prizes from "./components/Prizes";
+import Speakers from "./components/Speakers";
+import Partners from "./components/Partners";
+import Inspiration from "./components/Inspiration";
+import PrizesAndSchedule from "./components/PrizesAndSchedule";
+import FAQ from "./components/FAQ";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function ListItems() {
   return (
@@ -36,30 +44,10 @@ function ListItems() {
 
 export default function Home() {
   return (
-    <div className="max-w-[2560px] min-h-screen max-h-screen overflow-hidden flex m-auto bg-[#EEEEEE]">
-      <main className="flex min-h-screen flex-col items-center bg-[#EEEEEE]">
-        <div className="bg-[#C18C41] max-w-[2560px] w-screen font-mono overflow-hidden whitespace-nowrap text-[1.25rem] relative">
-          <ul
-            className="list-disc flex	gap-x-7 flex-row text-[#2F3536] overflow-hidden font-semibold	scroll-container"
-            id="scroll-container-one"
-          >
-            <ListItems />
-          </ul>
-          <ul
-            className="list-disc flex	gap-x-7 flex-row text-[#2F3536] overflow-hidden font-semibold	scroll-container"
-            id="scroll-container-two"
-          >
-            <ListItems />
-          </ul>
-          <ul
-            className="list-disc flex	gap-x-7 flex-row text-[#2F3536] overflow-hidden font-semibold	scroll-container"
-            id="scroll-container-three"
-          >
-            <ListItems />
-          </ul>
-        </div>
-
-        <div className="text-[#46424D] text-center flex flex-col font-quinque mt-[6rem]">
+    <div className="max-w-[1440px] flex flex-col m-auto bg-[#EEEEEE]">
+      <Navbar />
+      <main className="flex min-h-screen max-h-screen flex-col items-center bg-[#EEEEEE] overflow-hidden pt-[11rem] mt-[-5rem]">
+        <div className="text-[#46424D] text-center flex flex-col font-quinque">
           <span className="text-[1.2rem] lg:text-[3.6rem]">
             INDIA&apos;S LARGEST
           </span>
@@ -87,7 +75,7 @@ export default function Home() {
             <div>
               <Image
                 src={retroDesktop}
-                className="hidden md:block w-[30vw] mb-[-2rem]"
+                className="hidden md:block w-[30vw] mb-[-2rem] saturate-0	hover:saturate-100 transition-all"
                 alt="arrow"
               />
             </div>
@@ -95,7 +83,7 @@ export default function Home() {
             <div>
               <Image
                 src={retroMobile}
-                className="w-[60vw] mb-[-4rem] md:hidden"
+                className="w-[60vw] mb-[-4rem] md:hidden saturate-0	"
                 alt="arrow"
               />
             </div>
@@ -104,6 +92,12 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      <PrizesAndSchedule />
+      <Partners />
+      <Speakers />
+      <FAQ />
+      <Footer />
     </div>
   );
 }
