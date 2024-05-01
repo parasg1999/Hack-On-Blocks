@@ -16,7 +16,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col m-auto items-center w-full mx-[-10] mt-20 relative w-[90%]">
+    <div className="flex flex-col m-auto items-center w-full mx-[-10] mt-20 relative w-[95%]">
       <div className="absolute w-screen green-gradient h-full z-10">
         <div className="w-screen h-full trans-gradient z-20 flex flex-col justify-end font-quinque text-5xl leading-relaxed text-[#46424D]">
           <div className="text-nowrap overflow-hidden w-content whitespace-nowrap	gap-x-10 flex opacity-10 -ml-60">
@@ -55,25 +55,25 @@ export default function Footer() {
           </div>
           <div className="flex flex-col  items-start md:items-end">
             <div className="flex flex-row gap-x-4">
-              <Link href="#">
+              <Link href="https://www.linkedin.com/company/hackonhq">
                 <Image src={linkedin} alt="linkedin" />
               </Link>
-              <Link href="#">
+              <Link href="https://twitter.com/HackOnHQ">
                 <Image src={twitter} alt="twitter" />
               </Link>
-              <Link href="#">
-                <Image src={linkedin} alt="linkedin" />
-              </Link>
-              <Link href="#">
-                <Image src={discord} alt="discord" />
-              </Link>
-              <Link href="#">
-                <Image src={medium} alt="medium" />
-              </Link>
-              <Link href="#">
+              {/* <Link href="#">
+                <Image src={instagram} alt="instagram" />
+              </Link> */}
+              <Link href="https://www.youtube.com/@HackOnHQ">
                 <Image src={youtube} alt="youtube" />
               </Link>
-              <Link href="#">
+              <Link href="https://medium.com/hackonhackathon">
+                <Image src={medium} alt="medium" />
+              </Link>
+              <Link href="https://discord.hackon.tech">
+                <Image src={discord} alt="discord" />
+              </Link>
+              <Link href="https://t.me/HackOnHQ">
                 <Image src={telegram} alt="telegram" />
               </Link>
             </div>

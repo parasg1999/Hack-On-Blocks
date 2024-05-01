@@ -45,7 +45,7 @@ const faqs = [
 ];
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(-1);
 
   const toggleFaq = (index: number) => {
     if (index === openIndex) {
@@ -65,6 +65,7 @@ export default function FAQ() {
       <div className="flex flex-col gap-y-6 font-satoshi">
         {faqs.map((f, i) => (
           <div
+            key={i}
             className={
               openIndex === i
                 ? "px-6 bg-[#46424D14] rounded-lg"

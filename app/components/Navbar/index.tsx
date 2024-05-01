@@ -8,7 +8,7 @@ import menuClose from "@/app/assets/images/icons/menu-close.svg";
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between w-[100%] sticky top-0 z-20 m-auto">
+    <div className="flex justify-between w-[100%] sticky top-0 z-20 m-auto w-[95%]">
       <nav className="font-mono uppercase flex justify-between mt-4 md:mt-8 items-center w-full max-w-[90%] md:max-w-[1440px] bg-[#80E93D] rounded-lg pl-8 h-12 font-bold m-auto items-center">
         <div className="flex items-center">
           <a href="/" className="text-grey-darkest hover:text-blue-dark">

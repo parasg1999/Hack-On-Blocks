@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <div className="max-w-[1440px] flex flex-col m-auto bg-[#EEEEEE]">
       <Navbar />
-      <main className="flex min-h-screen max-h-screen flex-col items-center bg-[#EEEEEE] overflow-hidden pt-[11rem] mt-[-5rem]">
+      <main className="flex min-h-screen max-h-screen flex-col items-center bg-[#EEEEEE] overflow-hidden pt-[8rem] md:pt-[11rem] mt-[-5rem]">
         <div className="text-[#46424D] text-center flex flex-col font-quinque">
           <span className="text-[1.2rem] lg:text-[3.6rem]">
             INDIA&apos;S LARGEST
