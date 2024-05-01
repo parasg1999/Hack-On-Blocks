@@ -16,7 +16,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col m-auto items-center w-full mx-[-10] mt-20 relative w-[95%]">
+    <div className="flex flex-col m-auto items-center w-full mx-[-10] mt-20 relative max-w-[95%] max-w-[1440px]">
       <div className="absolute w-screen green-gradient h-full z-10">
         <div className="w-screen h-full trans-gradient z-20 flex flex-col justify-end font-quinque text-5xl leading-relaxed text-[#46424D]">
           <div className="text-nowrap overflow-hidden w-content whitespace-nowrap	gap-x-10 flex opacity-10 -ml-60">
