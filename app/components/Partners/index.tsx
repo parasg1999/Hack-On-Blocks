@@ -29,7 +29,7 @@ export default function Partners() {
         className="w-[34rem] mb-[-8rem] saturate-0 hover:saturate-100 transition-all"
         alt="arrow"
       />
-      <h1 className="text-xl md:text-6xl text-center font-quinque z-10 pointer-events-none">
+      <h1 className="text-xl md:text-6xl text-center font-quinque z-10 pointer-events-none !leading-relaxed">
         PREVIOUS PARTNERS
       </h1>
       <div

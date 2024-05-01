@@ -43,7 +43,7 @@ export default function Footer() {
       </div>
       <Image
         src={beeper}
-        className="w-[34rem] mb-[-4rem] md:mb-[-8rem] saturate-0 hover:saturate-100 transition-all z-30"
+        className="w-[34rem] mb-[-4rem] md:mb-[-8rem] transition-all z-30"
         alt="arrow"
       />
       <div className="bg-white flex flex-col w-full mt-12 md:mt-32 z-30 mb-12 rounded-xl">
