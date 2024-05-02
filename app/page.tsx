@@ -83,7 +83,7 @@ export default function Home() {
             <div>
               <Image
                 src={retroMobile}
-                className="w-[60vw] rounded-lg md:hidden saturate-0	"
+                className="max-h-[40vh] w-auto h-auto  aspect-auto min-w-[40vw] -mb-4 max-w-[60vw] rounded-lg md:hidden saturate-0	"
                 alt="arrow"
               />
             </div>
