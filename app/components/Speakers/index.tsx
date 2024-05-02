@@ -88,7 +88,7 @@ export default function Speakers() {
       >
         {speakers.map((speaker, idx) => (
           <div
-            className={`bg-[#FFFFFFA6] flex flex-col rounded-lg md:rounded-2xl overflow-hidden p-[0.875rem]`}
+            className={`bg-[#FFFFFFA6] flex flex-col rounded-lg md:rounded-2xl overflow-hidden p-[0.875rem] h-full`}
             key={idx}
           >
             <Image
@@ -97,7 +97,7 @@ export default function Speakers() {
               object-fit="cover"
               className="rounded-xl"
             />
-            <div className="px-1 md:px-1 font-satoshi color-[#46424D]">
+            <div className="px-1 md:px-1 font-satoshi color-[#46424D] flex flex-col justify-between h-full">
               <div className={`font-bold text-lg md:text-2xl mt-2 uppercase`}>
                 {speaker.name}
               </div>
