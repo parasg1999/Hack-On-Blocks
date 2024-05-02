@@ -75,7 +75,7 @@ export default function Home() {
             <div>
               <Image
                 src={retroDesktop}
-                className="hidden md:block w-[30vw] mb-[-4rem] saturate-0	hover:saturate-100 transition-all"
+                className="hidden md:block w-[30vw]  rounded-3xl saturate-0	hover:saturate-100 transition-all"
                 alt="arrow"
               />
             </div>
@@ -83,7 +83,7 @@ export default function Home() {
             <div>
               <Image
                 src={retroMobile}
-                className="w-[60vw] mb-[-4rem] md:hidden saturate-0	"
+                className="w-[60vw] rounded-lg md:hidden saturate-0	"
                 alt="arrow"
               />
             </div>
