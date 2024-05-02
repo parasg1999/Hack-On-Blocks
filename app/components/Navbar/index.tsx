@@ -18,7 +18,7 @@ export default function Navbar() {
     <div className="font-mono flex justify-between w-[100%] sticky top-0 z-20 m-auto w-[95%]">
       <div
         className="flex flex-col justify-between mt-4 md:mt-8 w-full max-w-[90%] md:max-w-[1440px] 
-        bg-[#80E93D] rounded-lg font-bold m-auto items-start md:items-center bg-white"
+        bg-[#80E93D] rounded-lg font-bold m-auto items-start md:items-center bg-white relative"
       >
         <nav className="uppercase flex justify-between items-center w-full bg-[#80E93D] pl-4 md:pl-8 rounded-lg h-12 font-bold m-auto items-center">
           <div className="flex items-center">
@@ -65,7 +65,7 @@ export default function Navbar() {
           </div>
         </nav>
         {isOpen && (
-          <>
+          <div className="absolute bg-white w-full mt-12 z-30 rounded-md">
             <div className="pl-4 py-2" onClick={toggleMenu}>
               <a href="#partners" className="even">
                 PARTNERS
@@ -85,7 +85,7 @@ export default function Navbar() {
                 <a href="https://hackonblocks.devfolio.co/overview">REGISTER</a>
               </div>
             </div>
-          </>
+          </div>
         )}
       </div>
     </div>
