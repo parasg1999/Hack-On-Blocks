@@ -1,42 +1,7 @@
-"use client";
-
-import { useState } from "react";
-import validateEmail from "../utils/validateEmail";
 import Image from "next/image";
 import arrowImage from "@/app/assets/images/icons/arrow-right.svg";
 
 export default function EmailCollector() {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = async () => {
-    console.log(email);
-    const isValidEmail = validateEmail(email);
-
-    if (!isValidEmail) return;
-
-    try {
-      const response = await fetch("/api/save_email", {
-        method: "POST",
-        cache: "no-cache",
-        credentials: "same-origin",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        redirect: "follow",
-        referrerPolicy: "no-referrer",
-        body: JSON.stringify({
-          email,
-        }),
-      });
-
-      await response.json();
-
-      setEmail("");
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
   return (
     <div className="flex flex-col items-center gap-y-[1rem] w-[100%]">
       <div className="flex flex-col md:flex-row gap-x-[2rem] items-center gap-y-8">

@@ -46,8 +46,8 @@ export default function Home() {
   return (
     <div className="max-w-[1440px] flex flex-col m-auto bg-[#EEEEEE]">
       <Navbar />
-      <main className="flex min-h-screen max-h-screen flex-col items-center bg-[#EEEEEE] overflow-hidden pt-[8rem] md:pt-[11rem] mt-[-5rem]">
-        <div className="text-[#46424D] text-center flex flex-col font-quinque">
+      <main className="flex min-h-screen max-h-screen flex-col items-center bg-[#EEEEEE] overflow-hidden pt-[8rem] md:pt-[8rem] mt-[-5rem]">
+        <div className="text-[#46424D] text-center flex flex-col font-quinque leading-tight">
           <span className="text-[1.2rem] lg:text-[3.6rem]">
             INDIA&apos;S LARGEST
           </span>
@@ -75,7 +75,7 @@ export default function Home() {
             <div>
               <Image
                 src={retroDesktop}
-                className="hidden md:block w-[30vw] mb-[-2rem] saturate-0	hover:saturate-100 transition-all"
+                className="hidden md:block w-[30vw] mb-[-4rem] saturate-0	hover:saturate-100 transition-all"
                 alt="arrow"
               />
             </div>
