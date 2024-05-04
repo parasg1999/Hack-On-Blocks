@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import moon from "../../assets/images/moon-cut.svg";
 import logo from "../../assets/images/logo/logo.svg";
@@ -13,8 +15,33 @@ import telegram from "@/app/assets/images/socials/telegram.svg";
 import vercel from "@/app/assets/images/vercel.svg";
 import dottech from "@/app/assets/images/dottech.svg";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Footer() {
+  const email = "contact@hackon.tech";
+  const phoneNumber = "+91 95606 78655";
+
+  const [isEmailCopied, setIsEmailCopied] = useState(false);
+  const [isPhoneCopied, setIsPhoneCopied] = useState(false);
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText(email);
+    setIsEmailCopied(true);
+
+    setTimeout(() => {
+      setIsEmailCopied(false);
+    }, 2000);
+  };
+
+  const copyPhoneNumber = () => {
+    navigator.clipboard.writeText(phoneNumber);
+    setIsPhoneCopied(true);
+
+    setTimeout(() => {
+      setIsPhoneCopied(false);
+    }, 2000);
+  };
+
   return (
     <div className="flex flex-col m-auto items-center w-full mx-[-10] mt-20 relative max-w-[95%] max-w-[1440px]">
       <div className="absolute w-screen green-gradient h-full z-10">
@@ -78,9 +105,39 @@ export default function Footer() {
               </Link>
             </div>
             <div className="flex flex-row flex-wrap gap-x-4 font-satoshi mt-4 pb-4 border-b-[#34393580] border-b">
-              <span className="w-fit">+91 95606 78655</span>
+              <span className="tooltip" onClick={copyPhoneNumber}>
+                {phoneNumber}
+                <span className="tooltiptext">
+                  {!isPhoneCopied
+                    ? "Copy phone number"
+                    : "Copied to clipboard!"}
+                </span>
+              </span>
+              {/* <span className="group w-fit cursor-pointer relative">
+                <span className="absolute hidden group-hover:block mt-[-2rem] bg-black text-white px-2 py-1 text-[1rem] whitespace-nowrap rounded-md   w-fit translate-x-2/4 ml-[-50%]">
+                  {!isPhoneCopied
+                    ? "Copy phone number"
+                    : "Copied to clipboard!"}
+                </span>
+                <span onClick={copyPhoneNumber}>{phoneNumber}</span>
+              </span> */}
               <span className="w-fit">|</span>
-              <span className="w-fit"> contact@hackon.tech</span>
+              {/* <span className="group w-fit cursor-pointer relative">
+                <span className="absolute hidden group-hover:block mt-[-2rem] bg-black text-white px-2 py-1 text-[1rem] whitespace-nowrap rounded-md w-fit translate-x-2/4 ml-[-50%]">
+                  {!isEmailCopied
+                    ? "Copy email address"
+                    : "Copied to clipboard!"}
+                </span>
+                <span onClick={copyEmail}>{email}</span>
+              </span> */}
+              <span className="tooltip" onClick={copyEmail}>
+                {email}
+                <span className="tooltiptext">
+                  {!isEmailCopied
+                    ? "Copy email address"
+                    : "Copied to clipboard!"}
+                </span>
+              </span>
               <span className="hidden md:block">|</span>
               <span className="hidden md:block">Code of Conduct ↗ </span>
             </div>
