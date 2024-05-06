@@ -12,36 +12,6 @@ import FAQ from "./components/FAQ";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-function ListItems() {
-  return (
-    <>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-      <li>CMNG SOON</li>
-    </>
-  );
-}
-
 export default function Home() {
   return (
     <div className="max-w-[1440px] flex flex-col m-auto bg-[#EEEEEE]">

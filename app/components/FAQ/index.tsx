@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "Did we miss something?",
-    a: "Send us a DM at @rishabhbansal on Telegram or reach out to us at rishabh@hackon.tech    ",
+    a: "Send us a DM at @rishabhbansal on Telegram or reach out to us at rishabh@hackon.tech",
   },
 ];
 

@@ -33,10 +33,14 @@ export default function EmailCollector() {
       </div>
       <div className="font-satoshi font-medium text-[1.25]rem md:text-[1.5rem] text-[#242424] text-center">
         Interested in Partnering?
-        <span className="ml-1 font-bold underline underline-offset-4	">
+        <a
+          href="https://t.me/rishabhbansal"
+          target="blank"
+          className="ml-1 font-bold underline underline-offset-4"
+        >
           <span>Reach out</span>
           <span>↗</span>
-        </span>
+        </a>
       </div>
     </div>
   );

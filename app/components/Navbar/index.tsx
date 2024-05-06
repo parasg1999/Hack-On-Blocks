@@ -5,10 +5,17 @@ import logo from "../../assets/images/logo/logo-new.svg";
 
 import menuOpen from "@/app/assets/images/icons/menu-open.svg";
 import menuClose from "@/app/assets/images/icons/menu-close.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (document)
+      document.addEventListener("contextmenu", (event) => {
+        event.preventDefault();
+      });
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
