@@ -181,3 +181,11 @@ background: linear-gradient(0deg, #80E93D -37.61%, rgba(128, 233, 61, 0) 100%);
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.coc-page {
+  background: linear-gradient(
+    89.97deg,
+    rgba(128, 233, 61, 0) 44.33%,
+    rgba(128, 233, 61, 0.1) 105.7%
+  );
+}

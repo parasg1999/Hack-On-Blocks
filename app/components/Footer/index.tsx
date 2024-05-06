@@ -139,7 +139,7 @@ export default function Footer() {
                 </span>
               </span>
               <span className="hidden md:block">|</span>
-              <span className="hidden md:block">Code of Conduct ↗ </span>
+              <a href="/code-of-conduct">Code of Conduct ↗ </a>
             </div>
             <div className="flex items-center gap-x-2 mt-4">
               ❤️
