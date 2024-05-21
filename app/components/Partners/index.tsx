@@ -7,7 +7,7 @@ import googleCloud from "../../assets/images/prev-partners/google-cloud.svg";
 import microsoft from "../../assets/images/prev-partners/microsoft.svg";
 import polygon from "../../assets/images/prev-partners/polygon.svg";
 import solana from "../../assets/images/prev-partners/solana.svg";
-import aptos from "../../assets/images/prev-partners/aptos.svg";
+import wazirx from "../../assets/images/prev-partners/wazirx.svg";
 import github from "../../assets/images/prev-partners/github.svg";
 import sui from "../../assets/images/prev-partners/sui.svg";
 import SectionSeparator from "../SectionSeparator";
@@ -17,7 +17,7 @@ export default function Partners() {
   const [partners, setPartners] = useState<any[]>([]);
 
   useEffect(() => {
-    setPartners([googleCloud, microsoft, polygon, solana, aptos, github, sui]);
+    setPartners([googleCloud, microsoft, polygon, solana, github, sui, wazirx]);
   }, []);
 
   return (

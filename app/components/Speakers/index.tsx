@@ -11,13 +11,11 @@ import dummySpeaker5 from "../../assets/images/speakers/Rectangle 37-5.png";
 import dummySpeaker6 from "../../assets/images/speakers/Rectangle 37-6.png";
 import dummySpeaker7 from "../../assets/images/speakers/Rectangle 37-7.png";
 import dummySpeaker8 from "../../assets/images/speakers/Rectangle 37-8.png";
-import linkedIn from "../../assets/images/icons/linkedin.svg";
-import twitter from "../../assets/images/icons/twitter.svg";
 import pokedex from "@/app/assets/images/pokedex.svg";
 
 import coinbase from "@/app/assets/images/sponsors/coinbase.svg";
 import polygon from "@/app/assets/images/sponsors/polygon.svg";
-import aptos from "@/app/assets/images/sponsors/aptos.svg";
+import spheron from "@/app/assets/images/sponsors/spheron.svg";
 import coindcx from "@/app/assets/images/sponsors/coindcx.svg";
 import avalanche from "@/app/assets/images/sponsors/avalanche.svg";
 import ripple from "@/app/assets/images/sponsors/ripple.svg";
@@ -34,11 +32,6 @@ const speakers = [
     image: dummySpeaker1,
     name: "sandeep nailiwal",
     company: polygon,
-  },
-  {
-    image: dummySpeaker2,
-    name: "Mohammad shaikh",
-    company: aptos,
   },
   {
     image: dummySpeaker3,
@@ -64,6 +57,11 @@ const speakers = [
     image: dummySpeaker7,
     name: "ayush",
     company: huddle,
+  },
+  {
+    image: dummySpeaker8,
+    name: "prashant maurya",
+    company: spheron,
   },
 ];
 

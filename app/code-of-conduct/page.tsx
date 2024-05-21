@@ -90,7 +90,7 @@ const CodeOfConduct = () => {
             No discrimination
           </h3>
           <div>
-            Hackathons hosted on Devfolio are dedicated to providing a safe and
+            Hackathons hosted on HackOn are dedicated to providing a safe and
             comfortable environment and harassment-free experience for everyone.
             No discrimination, on the basis of the following, shall be
             tolerated:
@@ -211,7 +211,7 @@ const CodeOfConduct = () => {
                 expel them from the hackathon with no refund (if applicable),
               </li>
               <li>
-                block their access to Devfolio resources including the website,
+                block their access to HackOn resources including the website,
               </li>
               <li>report their behaviour to local law enforcement.</li>
             </ul>
@@ -225,11 +225,11 @@ const CodeOfConduct = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 mb-[6rem] gap-x-8 gap-y-8">
             <div className="bg-[#80E93D] px-6 py-4 text-[#110000]">
               If you have witnessed or experienced any transgressions of this
-              Code of Conduct at a hackathon hosted on Devfolio, please report
-              it to your hackathon organizer, or get in touch with Devfolio.
+              Code of Conduct at a hackathon hosted by HackOn, please report it
+              to the hackathon organizer, or get in touch with Devfolio.
             </div>
             <div className="bg-[#242424] text-white px-6 py-4 flex flex-col gap-y-2">
-              <h3 className="font-bold text-2xl ">Denver Dsouza</h3>
+              <h3 className="font-bold text-2xl ">Rishabh Bansal</h3>
 
               <span className="tooltip  w-fit " onClick={copyEmail}>
                 <span className="flex flex-row items-center">
