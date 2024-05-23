@@ -86,7 +86,7 @@ export default function Speakers() {
       >
         {speakers.map((speaker, idx) => (
           <div
-            className={`bg-[#FFFFFFA6] flex flex-col rounded-lg md:rounded-2xl overflow-hidden p-[0.875rem] h-full`}
+            className={`bg-[#FFFFFFA6] flex flex-col rounded-lg md:rounded-2xl p-[0.875rem] h-full`}
             key={idx}
           >
             <Image
