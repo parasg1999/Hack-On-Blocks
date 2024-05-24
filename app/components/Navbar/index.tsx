@@ -64,7 +64,7 @@ export default function Navbar() {
               href="https://hackonblocks.devfolio.co/overview"
               className="text-lg no-underline bg-white hover:text-blue-dark ml-8 px-8 h-full flex items-center rounded-r-lg"
             >
-              Register
+              Apply Now
               <span className="text-2xl font-regular mt-[-0.4rem] ml-[0.25rem]">
                 ↗
               </span>
