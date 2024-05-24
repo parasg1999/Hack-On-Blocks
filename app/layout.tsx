@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { JetBrains_Mono } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const satoshi = localFont({
   src: [
@@ -44,6 +45,7 @@ export default function RootLayout({
       className={`${satoshi.variable} ${quinqueFive.variable} ${jetbrainsMono.variable}`}
     >
       <body>{children}</body>
+      <GoogleAnalytics gaId="G-YWT7D5FTDY" />
     </html>
   );
 }

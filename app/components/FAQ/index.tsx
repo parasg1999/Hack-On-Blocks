@@ -32,15 +32,15 @@ const faqs = [
   },
   {
     q: "Once I am accepted, what do I need to bring?",
-    a: "You can join our Telegram or Discord Channel to meet other hackers, mentors, and start building your project.    ",
+    a: `You can join our <a href="https://t.me/HackOnHQ" style="text-decoration: underline;" target="_blank">Telegram</a> or <a href="https://discord.hackon.tech" style="text-decoration: underline;" target="_blank">Discord</a> Server to meet other hackers, mentors, and start building your project.    `,
   },
   {
     q: "How does judging work?",
-    a: "A panel of builders will evaluate hacks based on creativity, technical difficulty, design, and usefulness. New judges will be announced on a rolling basis on Twitter/X, so make sure that you follow us!    ",
+    a: `A panel of builders will evaluate hacks based on creativity, technical difficulty, design, and usefulness. New judges will be announced on a rolling basis on <a href="https://twitter.com/HackOnHQ" style="text-decoration: underline;" target="_blank">Twitter/X</a>, so make sure that you follow us!    `,
   },
   {
     q: "Did we miss something?",
-    a: "Send us a DM at @rishabhbansal on Telegram or reach out to us at rishabh@hackon.tech",
+    a: `Send us a DM at @rishabhbansal on <a href="https://t.me/rishabhbansal" style="text-decoration: underline;" target="_blank">Telegram</a> or reach out to us at <a href="mailto:rishabh@hackon.tech" style="text-decoration: underline;" target="_blank">rishabh@hackon.tech</a>`,
   },
 ];
 
@@ -85,12 +85,11 @@ export default function FAQ() {
             <div
               className={
                 openIndex === i
-                  ? "py-2 flex flex-col text-xl  overflow-hidden  transition-all"
-                  : "flex flex-col text-xl h-[0px] overflow-hidden  transition-all"
+                  ? "pb-4  text-xl  overflow-hidden transition-all"
+                  : " text-xl h-[0px] overflow-hidden transition-all"
               }
-            >
-              {f.a}
-            </div>
+              dangerouslySetInnerHTML={{ __html: f.a }}
+            ></div>
           </div>
         ))}
       </div>
