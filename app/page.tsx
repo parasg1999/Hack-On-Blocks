@@ -1,8 +1,8 @@
 import Image from "next/image";
 import EmailCollector from "./components/emailCollector";
 
-import retroDesktop from "./assets/images/retro-desktop.svg";
-import retroMobile from "./assets/images/retro-mobile.svg";
+import retroDesktop from "./assets/images/retro-desktop.png";
+import retroMobile from "./assets/images/retro-mobile.png";
 import Prizes from "./components/Prizes";
 import Speakers from "./components/Speakers";
 import Partners from "./components/Partners";
