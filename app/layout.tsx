@@ -72,7 +72,7 @@ export default function RootLayout({
       className={`${satoshi.variable} ${quinqueFive.variable} ${jetbrainsMono.variable}`}
     >
       <body>{children}</body>
-      <GoogleAnalytics gaId="G-YWT7D5FTDY" />
+      <GoogleAnalytics gaId="UA-162071861-1" />
     </html>
   );
 }
