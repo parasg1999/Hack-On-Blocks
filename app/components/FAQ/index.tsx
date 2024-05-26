@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "When will the applications close?",
-    a: "The application period will close one week before the end of the hackathon period, i.e., June 15, 2024, at 11:59 PM IST. We evaluate applications on a rolling basis and will notify you of acceptance via email.",
+    a: "The application period will close one week before the end of the hackathon period, i.e., July 15, 2024, at 11:59 PM IST. We evaluate applications on a rolling basis and will notify you of acceptance via email.",
   },
   {
     q: "How does the application process work?",
