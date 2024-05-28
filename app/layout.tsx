@@ -48,15 +48,14 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: "Hack This Fall 2024",
-    description:
-      "Hack This Fall 2024 is a 36 hour in-person hackathon scheduled to happen in Gandhinagar, Gujarat from 9th Feb to 11th Feb 2024! 🧡",
+    title: "Hack On Blocks",
+    description: "Hack On Blocks",
     images: [
       {
-        url: "https://hackthisfall.tech/og.png",
+        url: "https://hackon.tech/og.png",
         width: 776,
         height: 437,
-        alt: "Hack This Fall 2024",
+        alt: "Hack On Blocks",
       },
     ],
   },
