@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://hackon.tech/og.png",
-        width: 2000,
-        height: 1000,
+        width: 776,
+        height: 437,
         alt: "Hack On Blocks",
       },
     ],
