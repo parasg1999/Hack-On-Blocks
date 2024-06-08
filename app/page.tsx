@@ -11,6 +11,7 @@ import PrizesAndSchedule from "./components/PrizesAndSchedule";
 import FAQ from "./components/FAQ";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Numbers from "./components/Numbers";
 
 export default function Home() {
   return (
@@ -64,6 +65,7 @@ export default function Home() {
       </main>
 
       <PrizesAndSchedule />
+      <Numbers />
       <Partners />
       <Speakers />
       <FAQ />
