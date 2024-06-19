@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "Once I am accepted, what do I need to bring?",
-    a: `You can join our <a href="https://t.me/HackOnHQ" style="text-decoration: underline;" target="_blank">Telegram</a> or <a href="https://discord.hackon.tech" style="text-decoration: underline;" target="_blank">Discord</a> Server to meet other hackers, mentors, and start building your project.    `,
+    a: `You can join our <a href="https://t.me/HackOnHQ" style="text-decoration: underline;" target="_blank">Telegram</a> to meet other hackers, mentors, and start building your project.    `,
   },
   {
     q: "How does judging work?",
