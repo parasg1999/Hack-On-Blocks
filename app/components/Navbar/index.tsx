@@ -22,7 +22,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="font-mono flex justify-between w-[100%] sticky top-0 z-20 m-auto w-[95%]">
+    <div className="font-mono flex justify-between w-[100%] sticky top-0 z-40 m-auto w-[95%]">
       <div
         className="flex flex-col justify-between mt-4 md:mt-8 w-full max-w-[90%] md:max-w-[1440px] 
         bg-[#80E93D] rounded-lg font-bold m-auto items-start md:items-center bg-white relative"
