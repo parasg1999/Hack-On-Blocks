@@ -236,3 +236,11 @@ background: linear-gradient(0deg, #80E93D -37.61%, rgba(128, 233, 61, 0) 100%);
 .ripple-border-inside {
   animation: ripple-in 0.8s linear 0s infinite;
 }
+
+.transparent-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 96.62%
+  );
+}
