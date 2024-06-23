@@ -47,7 +47,7 @@ export default function CommPartners() {
               src={img}
               alt="filecoin"
               width={500}
-              className={`${"max-h-[4rem] md:max-h-[5rem] max-w-[10rem] md:max-w-[18rem] w-auto"} `}
+              className={`${"max-h-[4rem] md:max-h-[5rem] max-w-[100%] md:max-w-[100%] w-auto"} `}
             />
           </div>
         ))}
