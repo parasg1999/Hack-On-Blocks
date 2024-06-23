@@ -31,7 +31,7 @@ export default function Partners() {
         alt="arrow"
       />
       <h1 className="text-xl md:text-6xl text-center font-quinque z-10 pointer-events-none !leading-relaxed">
-        SPONSORS
+        SPONSOR
       </h1>
       <div
         id="cards"
