@@ -11,6 +11,7 @@ import PrizesAndSchedule from "./components/PrizesAndSchedule";
 import FAQ from "./components/FAQ";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import CommPartners from "./components/CommPartners";
 
 export default function Home() {
   return (
@@ -65,6 +66,7 @@ export default function Home() {
 
       <Prizes />
       <Partners />
+      <CommPartners />
       <Speakers />
       <FAQ />
       <Footer />

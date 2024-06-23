@@ -23,6 +23,7 @@ export default function Partners() {
         image: polygon,
         amount: "$10,000",
         link: "https://hackonblocks.devfolio.co/prizes?partner=Polygon",
+        classes: "bg-[#ffffffA6]",
       },
       {
         image: fbi,
@@ -40,7 +41,7 @@ export default function Partners() {
     >
       <Image
         src={dinero}
-        className="w-[30rem] mb-[-4rem] saturate-0 hover:saturate-100 transition-all"
+        className="w-[20rem] mb-[-2rem] md:w-[30rem] md:mb-[-4rem] saturate-0 hover:saturate-100 transition-all"
         alt="arrow"
       />
       <h1 className="text-xl md:text-6xl text-center font-quinque z-10 pointer-events-none !leading-relaxed">
@@ -56,16 +57,17 @@ export default function Partners() {
         {partners.map((p, idx) => (
           <div
             className={
-              `bg-[#ffffffA6] cursor-pointer col-span-2 py-4 md:col-span-6 md:py-8 flex flex-col rounded-lg md:rounded-2xl overflow-hidden justify-between items-center gap-y-4 ` +
+              ` cursor-pointer col-span-2 py-4 md:col-span-6 md:py-8 flex flex-col rounded-lg md:rounded-2xl overflow-hidden justify-between items-center gap-y-4 ` +
               p.classes
             }
             key={idx}
+            onClick={() => window.open(p.link, "_blank")}
           >
             <Image
               src={p.image}
               alt="filecoin"
               height={80}
-              className={`${"max-w-[7rem] max-h-[5rem] md:max-w-[14rem] md:max-h-[10rem]"} `}
+              className={`${"max-w-[10rem] max-h-[5rem] md:max-w-[14rem] md:max-h-[10rem]"} `}
             />
             <h1 className="text-xl md:text-4xl text-center font-quinque z-10 pointer-events-none !leading-relaxed">
               {p.amount}
