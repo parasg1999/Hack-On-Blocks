@@ -5,7 +5,7 @@ import disk from "@/app/assets/images/partners.svg";
 
 import googleCloud from "../../assets/images/prev-partners/google-cloud.svg";
 import microsoft from "../../assets/images/prev-partners/microsoft.svg";
-import polygon from "../../assets/images/prev-partners/polygon.svg";
+import polygon from "../../assets/images/partners/polygon.png";
 import solana from "../../assets/images/prev-partners/solana.svg";
 import wazirx from "../../assets/images/prev-partners/wazirx.svg";
 import github from "../../assets/images/prev-partners/github.svg";
@@ -17,7 +17,7 @@ export default function Partners() {
   const [partners, setPartners] = useState<any[]>([]);
 
   useEffect(() => {
-    setPartners([googleCloud, microsoft, polygon, solana, github, sui, wazirx]);
+    setPartners([polygon]);
   }, []);
 
   return (
@@ -31,7 +31,7 @@ export default function Partners() {
         alt="arrow"
       />
       <h1 className="text-xl md:text-6xl text-center font-quinque z-10 pointer-events-none !leading-relaxed">
-        PREVIOUS PARTNERS
+        PARTNERS
       </h1>
       <div
         id="cards"
@@ -42,7 +42,7 @@ export default function Partners() {
             className={`bg-[#ffffffA6] ${
               idx > 2
                 ? "col-span-1 py-3 md:col-span-3 md:py-10"
-                : "col-span-2 py-4 md:col-span-4 md:py-14"
+                : "col-span-2 py-4 md:col-span-12 md:py-14"
             } flex flex-col rounded-lg md:rounded-2xl overflow-hidden justify-center items-center`}
             key={idx}
           >
@@ -53,7 +53,7 @@ export default function Partners() {
               className={`${
                 idx > 2
                   ? "max-w-[7rem] max-h-[5rem] md:max-w-[14rem] md:max-h-[10rem]"
-                  : " max-w-[10rem]  md:max-w-[16rem]"
+                  : " max-w-[10rem]  md:max-w-[18rem]"
               } `}
             />
           </div>

@@ -23,26 +23,26 @@ import push from "@/app/assets/images/sponsors/push.svg";
 import huddle from "@/app/assets/images/sponsors/huddle.svg";
 
 const speakers = [
-  {
-    image: dummySpeaker0,
-    name: "balaji s",
-    company: coinbase,
-  },
-  {
-    image: dummySpeaker1,
-    name: "sandeep nailiwal",
-    company: polygon,
-  },
-  {
-    image: dummySpeaker3,
-    name: "sumit gupta",
-    company: coindcx,
-  },
-  {
-    image: dummySpeaker4,
-    name: "devika mittal",
-    company: avalanche,
-  },
+  // {
+  //   image: dummySpeaker0,
+  //   name: "balaji s",
+  //   company: coinbase,
+  // },
+  // {
+  //   image: dummySpeaker1,
+  //   name: "sandeep nailiwal",
+  //   company: polygon,
+  // },
+  // {
+  //   image: dummySpeaker3,
+  //   name: "sumit gupta",
+  //   company: coindcx,
+  // },
+  // {
+  //   image: dummySpeaker4,
+  //   name: "devika mittal",
+  //   company: avalanche,
+  // },
   {
     image: dummySpeaker5,
     name: "navin gupta",
@@ -77,7 +77,7 @@ export default function Speakers() {
         alt="arrow"
       />
       <h1 className="text-xl md:text-6xl text-center font-quinque font-bold z-10 pointer-events-none ">
-        <div className="leading-relaxed">PREVIOUS SPEAKERS</div>
+        <div className="leading-relaxed">SPEAKERS</div>
         <div className="leading-relaxed">&amp; MENTORS</div>
       </h1>
       <div

@@ -4,7 +4,7 @@ import sectionImage from "../assets/images/separators/prizes.svg";
 import arrowImage from "../assets/images/icons/arrow.svg";
 import v from "./demo.module.scss";
 import Schedule from "../components/Schedule";
-import Prizes from "../components/Prizes";
+import Prizes from "../components/PrizesOld";
 import Speakers from "../components/Speakers";
 import Partners from "../components/Partners";
 import SectionSeparator from "../components/SectionSeparator";
