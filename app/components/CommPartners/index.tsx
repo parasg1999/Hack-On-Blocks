@@ -17,13 +17,43 @@ import _11 from "../../assets/images/comm/11.png";
 import _12 from "../../assets/images/comm/12.png";
 import _13 from "../../assets/images/comm/13.png";
 import _14 from "../../assets/images/comm/14.png";
+import _15 from "../../assets/images/comm/15.png";
+import _16 from "../../assets/images/comm/16.png";
+import _17 from "../../assets/images/comm/17.png";
+import _18 from "../../assets/images/comm/18.png";
+import _19 from "../../assets/images/comm/19.png";
+import _20 from "../../assets/images/comm/20.png";
+import _21 from "../../assets/images/comm/21.png";
+
 import { useEffect, useState } from "react";
 
 export default function CommPartners() {
   const [partners, setPartners] = useState<any[]>([]);
 
   useEffect(() => {
-    setPartners([_1, _2, _3, _5, _6, _7, _9, _10, _11, _14, _12, _13, _4, _8]);
+    setPartners([
+      _1,
+      _2,
+      _3,
+      _5,
+      _6,
+      _7,
+      _9,
+      _10,
+      _11,
+      _14,
+      _12,
+      _13,
+      _4,
+      _8,
+      _17,
+      _18,
+      _15,
+      _16,
+      _20,
+      _19,
+      _21,
+    ]);
   }, []);
 
   return (
