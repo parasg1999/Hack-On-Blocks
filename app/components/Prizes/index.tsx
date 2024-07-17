@@ -7,6 +7,8 @@ import googleCloud from "../../assets/images/prev-partners/google-cloud.svg";
 import microsoft from "../../assets/images/prev-partners/microsoft.svg";
 import polygon from "../../assets/images/partners/polygon.png";
 import fbi from "../../assets/images/partners/fbi.png";
+import reclaim from "../../assets/images/partners/reclaim.png";
+import stackr from "../../assets/images/partners/stackr.svg";
 import solana from "../../assets/images/prev-partners/solana.svg";
 import wazirx from "../../assets/images/prev-partners/wazirx.svg";
 import github from "../../assets/images/prev-partners/github.svg";
@@ -30,6 +32,18 @@ export default function Partners() {
         amount: "$5,000",
         link: "https://hackonblocks.devfolio.co/prizes?partner=Farcaster+Builders+India",
         classes: "bg-[#1A0149] text-white",
+      },
+      {
+        image: stackr,
+        amount: "$1,000",
+        link: "https://hackonblocks.devfolio.co/prizes?partner=Stackr+Labs",
+        classes: "bg-[#1A0149] text-white",
+      },
+      {
+        image: reclaim,
+        amount: "$3,000",
+        link: "https://hackonblocks.devfolio.co/prizes?partner=Reclaim+Protocol",
+        classes: "bg-[#ffffffA6]",
       },
     ]);
   }, []);

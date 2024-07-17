@@ -6,6 +6,9 @@ import disk from "@/app/assets/images/partners.svg";
 import googleCloud from "../../assets/images/prev-partners/google-cloud.svg";
 import microsoft from "../../assets/images/prev-partners/microsoft.svg";
 import polygon from "../../assets/images/partners/polygon.png";
+import devfolio from "../../assets/images/partners/devfolio.png";
+import orkes from "../../assets/images/partners/orkes.png";
+import reclaim from "../../assets/images/partners/reclaim.png";
 import solana from "../../assets/images/prev-partners/solana.svg";
 import wazirx from "../../assets/images/prev-partners/wazirx.svg";
 import github from "../../assets/images/prev-partners/github.svg";
@@ -17,7 +20,7 @@ export default function Partners() {
   const [partners, setPartners] = useState<any[]>([]);
 
   useEffect(() => {
-    setPartners([polygon]);
+    setPartners([polygon, reclaim, orkes, devfolio]);
   }, []);
 
   return (
@@ -31,7 +34,7 @@ export default function Partners() {
         alt="arrow"
       />
       <h1 className="text-xl md:text-6xl text-center font-quinque z-10 pointer-events-none !leading-relaxed">
-        SPONSOR
+        SPONSORS
       </h1>
       <div
         id="cards"
@@ -39,11 +42,7 @@ export default function Partners() {
       >
         {partners.map((img, idx) => (
           <div
-            className={`bg-[#ffffffA6] ${
-              idx > 2
-                ? "col-span-1 py-3 md:col-span-3 md:py-10"
-                : "col-span-2 py-4 md:col-span-12 md:py-14"
-            } flex flex-col rounded-lg md:rounded-2xl overflow-hidden justify-center items-center`}
+            className={`bg-[#ffffffA6] col-span-2 py-4 md:col-span-6 md:py-14 flex flex-col rounded-lg md:rounded-2xl overflow-hidden justify-center items-center`}
             key={idx}
           >
             <Image
