@@ -9,6 +9,7 @@ import polygon from "../../assets/images/partners/polygon.png";
 import devfolio from "../../assets/images/partners/devfolio.png";
 import orkes from "../../assets/images/partners/orkes.png";
 import reclaim from "../../assets/images/partners/reclaim.png";
+import bobble from "../../assets/images/partners/bobble.png";
 import solana from "../../assets/images/prev-partners/solana.svg";
 import wazirx from "../../assets/images/prev-partners/wazirx.svg";
 import github from "../../assets/images/prev-partners/github.svg";
@@ -20,7 +21,7 @@ export default function Partners() {
   const [partners, setPartners] = useState<any[]>([]);
 
   useEffect(() => {
-    setPartners([polygon, reclaim, orkes, devfolio]);
+    setPartners([polygon, reclaim, orkes, devfolio, bobble]);
   }, []);
 
   return (
